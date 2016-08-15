@@ -8,7 +8,12 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-*= 2.3.1
+  * Ruby ~> 2.3.1
+
+* Environment
+  * Passenger ~> 5.0.30
+  * Nginx ~> 1.10
+  * MariaDB ~> 10.1
 
 * System dependencies
 
