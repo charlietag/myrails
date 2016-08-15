@@ -1,0 +1,17 @@
+<%= form_for :article, url: articles_path do |f| %>
+  <p>
+    <%= f.label :title, class: "label label-default" %>
+  </p>
+  <p>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :text, class: "label label-default" %>
+  </p>
+  <p>
+    <%= f.text_field :text %>
+  </p>
+  <p>
+    <%= f.submit "Save", class: "btn btn-primary btn-lg" %>
+  </p>
+<% end %>
