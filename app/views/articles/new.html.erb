@@ -3,7 +3,7 @@
   <% if @article.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@article.errors.count, "error")  %>prohibited this article from being saved:
+        <%= pluralize(@article.errors.count, "error")  %> prohibited this article from being saved:
       </h2>
       <ul>
         <% @article.errors.full_messages.each do |msg| %>
@@ -29,4 +29,4 @@
     <%= f.submit "Save", class: "btn btn-primary btn-lg" %>
   </p>
 <% end %>
-<%= link_to "Back to Articles Lists", articles_url, class: "btn btn-default" %>
+<%= link_to "Back to Articles Lists", articles_url, class: "btn btn-primary" %>
