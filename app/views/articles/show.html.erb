@@ -3,15 +3,7 @@
   <%= @article.text %>
 </div>
 
-
-<% if @article.comments.present? %>
-  <% @article.comments.each do |c| %>
-    <div class="panel panel-warning">
-      <div class="panel-heading"><%= c.commenter %></div>
-      <%= c.body %>
-    </div>
-  <% end %>
-<% end %>
+<%= render @article.comments %>
 
 <div class="panel panel-success">
   <div class="panel-heading">Add a comment</div>
