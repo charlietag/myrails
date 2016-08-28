@@ -10,6 +10,9 @@ Things you may want to cover:
 * Ruby version
   * Ruby ~> 2.3.1
 
+* Rails version
+  * Rails ~> 5.0.0
+
 * Environment
   * Passenger ~> 5.0.30
   * Nginx ~> 1.10
