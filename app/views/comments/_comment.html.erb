@@ -1,4 +1,16 @@
 <div class="panel panel-warning">
-  <div class="panel-heading"><%= comment.commenter %></div>
+  <div class="panel-heading">
+    <%= comment.commenter %>
+    <span class="pull-right">
+      <%= link_to "Destroy",
+        [comment.article, comment],
+        # Equal to the following line
+        #article_comment_url(comment),
+        class: "label label-danger",
+        method: :delete,
+        data: { confirm:'Are you sure?'}
+      %>
+    </span>
+  </div>
   <%= comment.body %>
 </div>
