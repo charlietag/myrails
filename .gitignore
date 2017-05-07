@@ -15,5 +15,7 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
 /config/*.yml
 *.swp
+/public/assets
